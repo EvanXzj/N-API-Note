@@ -1,5 +1,6 @@
 /**
  * Node Query String Module Learning Note
+ * Link: https://nodejs.org/docs/latest-v10.x/api/querystring.html
  */
 const querystring = require('querystring')
 
@@ -14,4 +15,4 @@ console.log(querystring.parse('q-what;names-chui;names-dylan', ';', '-'))
 console.log(querystring.stringify({ foo: 'bar', baz: ['qux', 'quux'], corge: '' }))
 console.log(querystring.stringify({ foo: 'bar', baz: 'qux' }, ';', ':'))
 
-// 4. 同 1. 它是querystring.parse的默认解码方法
+// 4. querystring.escape(str) 同 1. 它是querystring.parse的默认解码方法

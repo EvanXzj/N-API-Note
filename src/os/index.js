@@ -1,8 +1,8 @@
 /**
  * Node os Module Learning Note
+ * Link: https://nodejs.org/docs/latest-v10.x/api/os.html
  */
 const os = require('os')
-// console.log(os)
 
 // os.EOL =>  \n on POSIX ;  \r\n on Windows
 console.log(JSON.stringify(os.EOL))
